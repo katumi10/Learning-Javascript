@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <p>Finding the hypotenuse of a triangle</p>
+        <label >side a: </label><input type="text" id="a"><br><br>
+        <label >side b:</label> <input type="text" id="b"><br><br>
+        <label id="c"></label><br><br>
+
+        <button id="btn">Submit</button>
+    </div>
+    <script>
+ let a;
+ let b;
+ let c;
+ document.getElementById("btn").onclick = function(){
+    a = document.getElementById("a").innerHTML;
+a = Number(a);
+
+b = document.getElementById("b").innerHTML;
+b = Number(b);
+
+c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+document.getElementById("c").innerHTML = "Side c: " + c;
+
+
+ }
+ 
+    </script>
+</body>
+</html>
