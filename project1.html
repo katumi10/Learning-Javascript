@@ -11,24 +11,24 @@
         <p>Finding the hypotenuse of a triangle</p>
         <label >side a: </label><input type="text" id="a"><br><br>
         <label >side b:</label> <input type="text" id="b"><br><br>
-        <label id="c"></label><br><br>
+        <button id="btn">Submit</button><br><br>
+        <label id="c"></label>
 
-        <button id="btn">Submit</button>
     </div>
     <script>
  let a;
  let b;
  let c;
  document.getElementById("btn").onclick = function(){
-    a = document.getElementById("a").innerHTML;
+    a = document.getElementById("a").value;
 a = Number(a);
 
-b = document.getElementById("b").innerHTML;
+b = document.getElementById("b").value;
 b = Number(b);
 
 c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
 
-document.getElementById("c").innerHTML = "Side c: " + c;
+document.getElementById("c").innerHTML= "Side c:" + c;
 
 
  }
