@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+</head>
+<body>
+    <div>
+        <h1>Payment Method</h1>
+        <label for="cedi">Cedi</label>
+        <input type="radio" name="currency" id="cedi"><br>
+        <label for="dollar">Dollar</label>
+        <input type="radio" name="currency" id="dollar"><br>
+        <label for="pound">Pound</label>
+        <input type="radio" name="currency" id="pound"><br><br>
+        <button type="submit" id="submit">Submit</button>
+        <p id="display" style="font-size: 20px;"></p>
+    </div>
+
+    <script>
+      let  cedi = document.getElementById("cedi");
+      let  pound = document.getElementById("pound");
+      let dollar = document.getElementById("dollar");
+      let  text = document.getElementById("display");
+      let submitBtn= document.getElementById("submit");
+
+ document.getElementById("submit").onclick = function(){
+    if(cedi.checked){
+        // alert("You are paying in Cedi")
+         text.innerHTML= "You are paying in cedi";
+    }
+    else if(dollar.checked){
+         text.innerHTML= "You are paying in Dollars";
+        // alert("You are paying in Dollars")
+    }
+    else if(pound.checked){
+         text.innerHTML= "You are paying in Pounds";
+        // alert("You are paying in Pounds")
+    }
+    else{
+        // alert("Choose a payment method")
+        text.innerHTML= "Choose a payment method!" ; 
+    }
+ }
+    </script>
+</body>
+</html>
