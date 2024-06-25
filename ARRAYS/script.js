@@ -1,7 +1,7 @@
 
 //array = like a variable that can store multiple values
 
-//You can access an array element by referrring to the index number
+//You can access an array element by referring to the index number
 const cars = ["BMW","Mercedes","Tundra","Toyota"];
   let car = cars[1];
   console.log(car); //output is Mercedes
@@ -29,7 +29,7 @@ const cars = ["BMW","Mercedes","Tundra","Toyota"];
     //removing an element at the beginning of an array
     fruits.shift();
 
-    //the lenght of ana array
+    //the length of an  array
     let length = fruits.length;
     console.log(length);  //displays 5
 
