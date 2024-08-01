@@ -1,4 +1,4 @@
- //function: a block of code designed to peform a specific task
+ //function: a block of code designed to perform a specific task
 
  /*syntax:
  the function keyword followed by the function name followed by parenthesis()
@@ -28,3 +28,20 @@
     return a*b/c;
  }
 //  returns 6
+
+
+// ***function expressions
+
+//example
+
+// const hello = function(){
+//    console.log("hello");
+// }
+
+// hello();
+// *** arrow functions
+
+const hello = () =>{
+   console.log("Hello");
+}
+hello();
