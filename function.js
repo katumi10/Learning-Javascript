@@ -6,7 +6,7 @@
     code to be executed
  }
  (x,y,z) are function parameters
- function aargumentss are the values received by the function when it is invoked(called)
+ function arguments are the values received by the function when it is invoked(called)
  */
 
  //calling a function which performs some calculation and returns the result
