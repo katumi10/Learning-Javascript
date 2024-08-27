@@ -36,3 +36,10 @@ const cars = ["BMW","Mercedes","Tundra","Toyota"];
     //finding the index of an element in an array
     let index = fruits.indexOf("banana");
     console.log(index) //displays 1
+
+
+    //shortcut for displaying elements an array
+
+    for(let fruit of fruits){
+      console.log(fruit);
+    }
